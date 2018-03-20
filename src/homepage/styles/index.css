@@ -1,0 +1,9 @@
+.server-time {
+    color: #AA3333;
+    font-size: big;
+}
+
+.browser-time {
+    color: rgb(170, 162, 51);
+    font-size: big;
+}

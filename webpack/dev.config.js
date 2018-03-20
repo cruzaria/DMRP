@@ -1,0 +1,45 @@
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+// importLoader:1 from https://blog.madewithenvy.com/webpack-2-postcss-cssnext-fdcd2fd7d0bd
+
+module.exports = {
+    devtool: 'source-map', // 'cheap-module-eval-source-map'
+    entry: {
+        'accounts': './src/accounts/scripts/__entry__.js',
+        'homepage': './src/homepage/scripts/__entry__.js',
+    },
+    output: {
+        path: path.resolve(__dirname),
+        filename: '[name]/scripts/__bundle__.js'
+    },
+    module: {
+        rules: [{
+            test: /\.css$/,
+            use: ExtractTextPlugin.extract([
+                {
+                    loader: 'css-loader',
+                    options: { importLoaders: 1 },
+                },
+                'postcss-loader']
+            )
+        }, {
+            test: /\.scss$/,
+            use: ExtractTextPlugin.extract([
+                {
+                    loader: 'css-loader',
+                    options: { importLoaders: 1 },
+                },
+                'postcss-loader',
+                {
+                    loader: 'sass-loader',
+                    options: {
+                        data: `@import "${__dirname}/../src/static/styles/config/_variables.scss";`
+                    }
+                }]
+            )
+        }],
+    },
+    plugins: [
+        new ExtractTextPlugin('styles/[name].css')
+    ]
+};
