@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1521239017.3550124
+_modified_time = 1521548035.880237
 _enable_loop = True
 _template_filename = '/edx/htdocs/django/django-react-redux-base/src/homepage/templates/main.htm'
 _template_uri = 'main.htm'
@@ -27,7 +27,8 @@ def render_body(context,**pageargs):
         __M_writer('        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>\n\n')
         __M_writer('        <script src="/django_mako_plus/dmp-common.min.js"></script>\n        ')
         __M_writer(str( django_mako_plus.links(self) ))
-        __M_writer('\n\n    </head>\n    <body>\n\n        <header>\n            <h1>Welcome to the your new app!<h1>\n        </header>\n\n        <main>\n            ')
+        __M_writer('\n        \n')
+        __M_writer('    </head>\n    <body>\n\n        <header>\n            <h1>Welcome to the your new app!<h1>\n        </header>\n\n        <main>\n            ')
         if 'parent' not in context._data or not hasattr(context._data['parent'], 'content'):
             context['self'].content(**pageargs)
         
@@ -52,6 +53,6 @@ def render_content(context,**pageargs):
 
 """
 __M_BEGIN_METADATA
-{"source_encoding": "utf-8", "filename": "/edx/htdocs/django/django-react-redux-base/src/homepage/templates/main.htm", "uri": "main.htm", "line_map": {"18": 0, "35": 26, "53": 47, "41": 24, "26": 2, "27": 10, "28": 13, "29": 14, "30": 14, "47": 24}}
+{"filename": "/edx/htdocs/django/django-react-redux-base/src/homepage/templates/main.htm", "uri": "main.htm", "source_encoding": "utf-8", "line_map": {"48": 26, "18": 0, "42": 26, "36": 28, "54": 48, "26": 2, "27": 10, "28": 13, "29": 14, "30": 14, "31": 18}}
 __M_END_METADATA
 """

@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1521291448.5699015
+_modified_time = 1521548035.8165658
 _enable_loop = True
 _template_filename = '/edx/htdocs/django/django-react-redux-base/src/homepage/templates/index.html'
 _template_uri = 'index.html'
@@ -62,6 +62,6 @@ def render_content(context,**pageargs):
 
 """
 __M_BEGIN_METADATA
-{"source_encoding": "utf-8", "line_map": {"48": 3, "37": 1, "55": 3, "56": 7, "57": 7, "42": 11, "29": 0, "63": 57}, "uri": "index.html", "filename": "/edx/htdocs/django/django-react-redux-base/src/homepage/templates/index.html"}
+{"filename": "/edx/htdocs/django/django-react-redux-base/src/homepage/templates/index.html", "uri": "index.html", "source_encoding": "utf-8", "line_map": {"48": 3, "37": 1, "55": 3, "56": 7, "57": 7, "42": 11, "29": 0, "63": 57}}
 __M_END_METADATA
 """
