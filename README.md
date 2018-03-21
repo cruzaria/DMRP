@@ -114,3 +114,6 @@
 
 ### Контакты
   [Документация](https://cruzaria.github.com/) и [просто спросить](https://https://github.com/VladimirAndropov)
+  
+### Взносы (Donate)
+Вы можете поблагодарить нас за работу, скажем, ненужным доменом с более-менее подходящим названием для проекта. Или сделать взнос на домен: [gofundme](https://www.gofundme.com/eletsuniversity)
